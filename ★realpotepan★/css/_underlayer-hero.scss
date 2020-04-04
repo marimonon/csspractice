@@ -1,0 +1,25 @@
+ 
+  .section-underlayer-hero.course {
+    background-image: url(../images/course-hero-pc.png);
+  }
+  
+  .underlayer-hero-heading.course {
+    padding-left: 145px;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .section-underlayer-hero.course {
+      background-image: url(../images/course-hero-sp.png);
+    }
+    .underlayer-hero-heading.course {
+      padding-left: 0px;
+    }
+  }
+  
+  @media screen and (max-width: 374px) {
+    .section-underlayer-hero.course {
+      background-image: url(../images/course-hero-sp.png);
+      padding-top: 35px;
+      padding-bottom: 75px;
+    }
+  }

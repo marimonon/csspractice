@@ -1,0 +1,113 @@
+.plan-nav-list {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 33%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: 2px solid #F79314;
+    border-radius: 6px;
+  }
+  
+  .plan-nav-list a {
+    display: block;
+    width: 100%;
+    padding: 12px 30px 14px;
+    color: #F79314;
+    transition: color .2s;
+  }
+  
+  .plan-nav-list a::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    display: inline-block;
+    width: 16px;
+    height: 10px;
+    margin-right: 16px;
+    background-image: url(../images/icon-arrow.png);
+    background-size: 100%;
+    transform: translateY(-50%);
+  }
+  
+  .plan-nav-list a:hover {
+    color: #FFFFFF;
+  }
+  
+  .plan-nav-list a:hover::before {
+    background-image: url(../images/icon-arrow-hover.png);
+  }
+  
+  .plan-nav-text {
+    font-size: 16px;
+    padding-left: 12px;
+  }
+  
+  .plan-nav-list {
+    pointer-events: none;
+    transition: background-color .2s;
+  }
+  
+  .plan-nav-list:hover {
+    background-color: #F79314;
+  }
+  
+  .plan-nav-list a {
+    pointer-events: auto;
+  }
+  
+  @media screen and (max-width: 1080px) and (min-width: 768px) {
+    .plan-nav-list {
+      font-size: 19px;
+    }
+    .plan-nav-list a {
+      padding-left: 38px;
+    }
+    .plan-nav-list:nth-child(3) a {
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    .plan-nav-text {
+      display: block;
+      padding-left: 0;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .plan-nav-block {
+      flex-direction: column;
+    }
+    .plan-nav-list {
+      width: 100%;
+    }
+    .plan-nav-list+.plan-nav-list {
+      margin-top: 10px;
+    }
+    .plan-nav-list a {
+      padding-left: 44px;
+    }
+    .plan-nav-text {
+      font-size: 15px;
+    }
+    .plan-nav-list a:hover {
+      color: #F79314;
+      background-color: transparent;
+    }
+    .plan-nav-list a:hover::before {
+      background-image: url(../images/icon-arrow.png);
+    }
+    .plan-nav-list:hover {
+      background-color: #FFFFFF;
+    }
+  }
+  
+  @media screen and (max-width: 374px) {
+    .plan-nav-list {
+      font-size: 17px;
+    }
+    .plan-nav-text {
+      font-size: 12px;
+    }
+  }

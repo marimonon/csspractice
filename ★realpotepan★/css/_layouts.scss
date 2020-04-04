@@ -1,0 +1,16 @@
+.content-width {
+	max-width: 1140px;
+	padding-left: 50px;
+	padding-right: 50px;
+	margin-left: auto;
+	margin-right: auto;
+	position: relative;
+}
+
+@media screen and (max-width: 767px) {
+	.content-width {
+	max-width: none;
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+}

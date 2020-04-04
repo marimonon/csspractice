@@ -1,0 +1,30 @@
+.contents-list {
+    margin-left: -20px;
+    margin-right: -20px;
+  }
+  
+  .contents-list>.contents-cassette {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: calc(100% / 3);
+  }
+  
+  @media screen and (max-width: 767px) {
+    .contents-list {
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .contents-list>.contents-cassette {
+      padding-left: 0;
+      padding-right: 0;
+      width: 100%;
+    }
+    .contents-list>.contents-cassette+.contents-cassette {
+      margin-top: 20px;
+      padding-top: 30px;
+    }
+  }

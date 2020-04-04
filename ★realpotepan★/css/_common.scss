@@ -1,0 +1,20 @@
+img {
+    width: 100%;
+  }
+  
+  .pc-br {
+    display: block;
+  }
+  
+  .sp-br {
+    display: inline;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .pc-br {
+      display: inline;
+    }
+    .sp-br {
+      display: block;
+    }
+  }

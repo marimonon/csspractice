@@ -1,0 +1,15 @@
+.list-marker::before {
+	content: '';
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	vertical-align: middle;
+	background-color: #f79214;
+	margin: 0 10px;
+}
+
+.list-marker {
+	margin-left: 1.9em;
+	text-indent: -1.9em;
+}

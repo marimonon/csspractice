@@ -1,0 +1,20 @@
+.header-logo > .header-logo-pc {
+	width: auto;
+	height: 20px;
+}
+
+.header-logo > .header-logo-sp {
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+	.header-logo > .header-logo-pc {
+		display: none;
+	}
+
+	.header-logo > .header-logo-sp {
+		display: inline-block;
+		width: auto;
+		height: 16px;
+	}
+}

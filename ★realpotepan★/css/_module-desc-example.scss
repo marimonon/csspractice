@@ -1,0 +1,24 @@
+.desc-list .example {
+	background-color: #FFFFFF;
+	width: 100%;
+	margin-top: 40px;
+	border-radius: 20px;
+	padding: 30px;
+}
+
+.desc-list .example.performance {
+	padding: 40px 70px;
+}
+
+@media screen and (max-width: 1080px) {
+	.desc-list .example.performance {
+	padding: 30px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.desc-list .example,
+	.desc-list .example.performance {
+	padding: 20px;
+	}
+}

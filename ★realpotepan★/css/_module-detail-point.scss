@@ -1,0 +1,97 @@
+  .detail-point {
+    margin-top: 100px;
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+  }
+  
+  .detail-point-title {
+    margin-top: -20px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+  
+  .detail-point .list-no {
+    background-color: #FFFFFF;
+  }
+  
+  .list-no-image {
+    width: 40px;
+    margin-top: -8px;
+  }
+  
+  .detail-cassette {
+    width: 31%;
+    margin-top: 40px;
+  }
+  
+  .detail-cassette-title {
+    padding: 4px;
+    border-radius: 15px;
+    color: #FFFFFF;
+    background-color: #222222;
+  }
+  
+  .detail-cassette-image {
+    margin-top: 16px;
+  }
+  
+  .detail-cassette-text {
+    margin-top: 16px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .detail-cassette-text::before {
+    content: '';
+    display: inline-block;
+    width: 23px;
+    height: 20px;
+    margin-right: 10px;
+    background: url(../images/icon-finger.png) no-repeat;
+    background-size: 100%;
+  }
+  
+  @media screen and (max-width: 767px) {
+    .detail-point {
+      margin-top: 80px;
+      padding-top: 30px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .detail-point .list-no {
+      width: 80px;
+      height: 80px;
+      margin-top: -70px;
+    }
+    .list-no-image {
+      width: 32px;
+    }
+    .detail-point-title {
+      font-size: 20px;
+    }
+    .detail-box {
+      flex-direction: column;
+    }
+    .detail-cassette {
+      width: 100%;
+      margin-top: 36px;
+    }
+    .detail-cassette-title {
+      font-size: 15px;
+    }
+    .detail-cassette-text {
+      font-size: 15px;
+    }
+    .detail-cassette-text::before {
+      vertical-align: sub;
+    }
+  }
+  
+  @media screen and (max-width: 374px) {
+    .detail-cassette-title {
+      font-size: 13px;
+    }
+  }
+  

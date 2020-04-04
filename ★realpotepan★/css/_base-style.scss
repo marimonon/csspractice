@@ -1,0 +1,76 @@
+/* font style*/
+html
+{ font-size: 14px; font-family: "Noto Sans JP", sans-serif; }
+/* 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'メイリオ', 'Meiryo' */
+
+html, input, select, textarea
+{ color: #222222; }
+
+/* anchor style */
+a { color: #222222; text-decoration: none; }
+
+body {
+	font-family: 'Noto Sans JP', sans-serif;
+	font-weight: 400;
+}
+
+main {
+	display: block;
+}
+
+select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+input:focus {
+	outline: 0;
+}
+
+select{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+/* awedome対応用css https://kumanote.jp/linkicon/ */
+.entry-content a[target="_blank"]:after {
+	font-family: 'Font Awesome 5 Free';
+	content: 'f164','f304','f073','f4fc','f157','109';
+	/* content: '\f35d'; デフォルト*/
+
+	/* thumbs-up f164 */
+	/* pen f304 */
+	/* calendar-alt f073 */
+	/* user-check f4fc */
+	/* yen-sign f157 */
+	/* laptop f109 */
+
+	font-size: 1.0em;
+	margin: 0px 3px;
+	font-weight: 900;
+	color: #F79314;
+	float:left;
+	}
+
+@media screen and (max-width: 1080px) {
+	main {
+		padding-top: 60px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	main {
+		padding-top: 52px;
+	}
+
+	html {
+		font-size: 15px;
+	}
+}
+

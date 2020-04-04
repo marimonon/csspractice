@@ -1,0 +1,247 @@
+.detail-table-head {
+    display: none;
+  }
+  
+  .detail-table-box {
+    margin-top: 60px;
+  }
+  
+  .detail-table {
+    width: 100%;
+    border-collapse: separate;
+  }
+  
+  .tbl-tr+.tbl-tr {
+    margin-top: 4px;
+  }
+  
+  .tbl-col {
+    width: 26%;
+  }
+  
+  .tbl-col:first-child {
+    width: 21%;
+  }
+  
+  .tbl-head {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 12px 4px;
+    color: #FFFFFF;
+    background-color: #F79314;
+  }
+  
+  .tbl-head:nth-child(2) {
+    border-top-left-radius: 10px;
+  }
+  
+  .tbl-head:nth-child(4) {
+    border-top-right-radius: 10px;
+  }
+  
+  .tbl-head--emphasis {
+    display: block;
+    font-size: 24px;
+  }
+  
+  .tbl-head--first {
+    justify-content: center;
+    flex-direction: row;
+    color: #F79314;
+    background-color: transparent;
+  }
+  
+  .tbl-head-img, .tbl-head-text {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .tbl-head-img {
+    width: 40%;
+  }
+  
+  .tbl-head-text {
+    width: 50%;
+  }
+  
+  .tbl-comment {
+    letter-spacing: 2px;
+  }
+  
+  .tbl-comment:nth-child(1) {
+    font-size: 12px;
+    line-height: 1;
+  }
+  
+  .tbl-comment:nth-child(2), .tbl-comment:nth-child(3) {
+    font-size: 20px;
+    line-height: 1;
+  }
+  
+  .tbl-comment--emphasis {
+    font-size: 30px;
+  }
+  
+  .tbl-sub-head, .tbl-content {
+    padding: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+  }
+  
+  .tbl-content {
+    vertical-align: top;
+  }
+  
+  .tbl-sub-head {
+    align-items: center;
+    text-align: left;
+  }
+  
+  .detail-table .tbl-tr:nth-child(2) .tbl-sub-head {
+    border-top-left-radius: 10px;
+  }
+  
+  .detail-table .tbl-tr:last-child .tbl-sub-head {
+    border-bottom-left-radius: 10px;
+  }
+  
+  .detail-table .tbl-tr:nth-child(even) .tbl-sub-head {
+    background-color: #E4EFF5;
+  }
+  
+  .detail-table .tbl-tr:nth-child(odd) .tbl-sub-head {
+    background-color: #D9EAF3;
+  }
+  
+  .detail-table .tbl-tr:nth-child(even) .tbl-content {
+    background-color: #FFFDFA;
+  }
+  
+  .detail-table .tbl-tr:nth-child(odd) .tbl-content {
+    background-color: #FFF8EA;
+  }
+  
+  .tbl-justify>* {
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .tbl-list {
+    position: relative;
+    padding-left: 18px;
+  }
+  
+  .tbl-list::before {
+    content: '';
+    position: absolute;
+    top: 9px;
+    left: 0;
+    display: inline-block;
+    min-width: 8px;
+    height: 8px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #F79314;
+  }
+  
+  .tbl-img {
+    width: 30px;
+  }
+  
+  .tbl-text--emphasis {
+    font-size: 30px;
+  }
+  
+  .tbl-price {
+    font-size: 20px;
+  }
+  
+  @media screen and (max-width: 1080px) {
+    .detail-table-head {
+      display: block;
+    }
+    .tbl-head-text {
+      display: none;
+    }
+    .detail-table-head {
+      color: #F79314;
+      margin-bottom: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 32px;
+      text-align: center;
+      letter-spacing: 4px;
+    }
+    .detail-large-text {
+      font-size: 30px;
+    }
+    .detail-large-text>span {
+      font-size: 40px;
+    }
+    .tbl-head-img {
+      width: 65%;
+    }
+    .tbl-head .sp-br {
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .detail-table-box {
+      margin-top: 40px;
+    }
+    .tbl-col {
+      width: 25%;
+    }
+    .tbl-col:first-child {
+      width: 23%;
+    }
+    .tbl-tr+.tbl-tr {
+      margin-top: 2px;
+    }
+    .tbl-head {
+      font-size: 10px;
+      line-height: 15px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+    }
+    .tbl-head-img {
+      width: 100%;
+    }
+    .tbl-head--emphasis {
+      font-size: 12px;
+    }
+    .tbl-sub-head, .tbl-content {
+      padding: 8px 10px;
+      font-size: 10px;
+    }
+    .tbl-sub-head {
+      padding: 8px 4px 8px 8px;
+      line-height: 1.1;
+    }
+    .tbl-list {
+      padding-left: 8px;
+      line-height: 1.2;
+    }
+    .tbl-list+.tbl-list {
+      margin-top: 6px;
+    }
+    .tbl-list::before {
+      top: 4px;
+      min-width: 5px;
+      height: 5px;
+      margin-right: 4px;
+    }
+    .tbl-img {
+      width: 20px;
+    }
+    .tbl-text--emphasis {
+      font-size: 15px;
+    }
+    .tbl-price {
+      font-size: 12px;
+    }
+  }
+  

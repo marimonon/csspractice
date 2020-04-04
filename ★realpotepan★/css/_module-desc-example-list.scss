@@ -1,0 +1,52 @@
+.desc-list .example-list {
+	margin: 0 -60px;
+}
+
+.desc-list .example-list > li {
+	padding: 0 60px;
+	width: calc(100% / 3);
+}
+
+.desc-list .example-list img {
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width: 1080px) {
+	.desc-list .example-list {
+	margin: 0 -30px;
+	}
+
+	.desc-list .example-list > li {
+	padding: 0 30px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.desc-list > li {
+	padding: 30px 20px 20px 20px;
+	}
+
+	.desc-list .example-list {
+		flex-wrap: wrap;
+		margin: 0;
+	}
+
+	.desc-list .example-list > li {
+		padding: 0;
+	}
+
+	.desc-list .example-list > li:first-child {
+		margin: 0 auto;
+		width: 80%;
+	}
+
+	.desc-list .example-list > li + li {
+		width: 45%;
+		margin-top: 30px;
+	}
+
+	.desc-list .example-list > li + li img {
+	width: 100%;
+	}
+}

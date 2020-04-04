@@ -1,0 +1,35 @@
+/* TODO: あとで共通のクラスで管理 */
+@media screen and (min-width: 767px){
+	/* style */
+	.hover-opacity {
+	transition: opacity .2s;
+	&:hover {
+	opacity: .7;
+	}
+	}
+
+	.hover-scale {
+	transition: transform .2s;
+	}
+
+	a:hover .hover-scale {
+	transform: scale(1.1);
+	}
+
+	.service-media:hover .hover-scale {
+	transform: scale(1.05);
+	}
+
+	.hover-text-color {
+	transition: .2s;
+	}
+
+	a:hover .hover-text-color,
+	.hover-text-color:hover {
+	color: #F79314;
+	}
+
+	a.link-button {
+	color: #FFFFFF;
+	}
+}

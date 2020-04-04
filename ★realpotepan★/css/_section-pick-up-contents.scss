@@ -1,0 +1,57 @@
+.pick-up-contents {
+	padding-top: 40px;
+}
+
+.pick-up-contents > .content-width {
+	background-image: url(../images/bg-section-top-course.png);
+	background-size: 281px 275px;
+	background-repeat: no-repeat;
+	background-position: calc(100% - 50px) top;
+	padding-top: 35px;
+}
+
+.main-section.pick-up-contents > * {
+	position: relative;
+	z-index: 1;
+}
+
+.pick-up-contents .section-main-heading > br {
+	display: none;
+}
+
+@media screen and (max-width: 767px) {
+	.main-section.pick-up-contents::before {
+	content: '';
+	position: absolute;
+	top: 40px;
+	left: 70%;
+	display: block;
+	width: 281px;
+	height: 275px;
+	background-image: url(../images/bg-section-top-course.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	}
+
+	.main-section.pick-up-contents::before {
+	top: 40px;
+	left: 60%;
+	width: 130px;
+	height: 130px;
+	}
+
+	.pick-up-contents {
+	padding-top: 60px;
+	}
+
+	.pick-up-contents > .content-width {
+	background: none;
+	padding-top: 0;
+	}
+}
+
+@media screen and (max-width: 374px) {
+	.pick-up-contents .section-main-heading > br {
+	display: block;
+	}
+}

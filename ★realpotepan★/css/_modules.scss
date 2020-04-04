@@ -1,0 +1,12 @@
+.pc-dn {
+	display: none !important;
+}
+
+@media screen and (max-width: 767px) {
+	.pc-dn {
+		display: block !important;
+	}
+	.sp-dn {
+		display: none !important;
+	}
+}
