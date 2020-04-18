@@ -1,0 +1,69 @@
+.point2{
+    display: block;
+    // flex-direction: column;
+    // padding: 40px;
+    margin: 30px auto;
+    text-align: center;
+    width: 1040px;
+    border-radius: 20px 20px 0 0;
+    h3{
+        font-size: 30px;
+        line-height: 36px;
+        background-color: steelblue;
+        padding-top: 50px;
+
+        border-radius: 20px 20px 0 0;
+    }
+}
+
+.enn{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: skyblue;
+    margin: 0 auto -40px;
+    // margin: auto;
+    position: relative;
+    .heading-icon{
+        display: inline-block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        width: 40px;
+    }
+}
+
+.shared-points{
+    display: flex;
+    justify-content: space-around;
+    background-color: #fcfaf5;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+    width: 1040px;
+    border-radius: 0 0 20px 20px;
+}
+
+.shared-point{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    background-color: palegreen;
+    text-align: center;
+    p{
+        font-weight: 700;
+        display: block;
+        margin: 20px 0px;
+        img{
+            width: 20px;
+        }
+    }
+    .shared-point-p{
+        background-color: #222222;
+        color: #ffffff;
+        border-radius: 30px;
+    }
+    img{
+        width: 100%;
+    }
+}

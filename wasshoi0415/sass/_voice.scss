@@ -1,0 +1,28 @@
+.voice-wrapper{
+    background-image: url(../img/bg-section-top-course.png);
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.voices{
+    display: block;
+    margin: auto;
+    width: 1040px;
+    display: flex;
+    justify-content: space-between;
+    // background-color: green;
+    margin-bottom: 120px;
+}
+
+.voice{
+    display: block;
+    width: 31%;
+    img{
+        display: block;
+        width: 100%;
+
+    }
+    p{
+        font-weight: 700;
+    }
+}

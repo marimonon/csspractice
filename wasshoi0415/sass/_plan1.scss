@@ -1,0 +1,185 @@
+// コースボタン
+
+.couse-btns{
+    display: flex;
+    justify-content: space-between;
+    width: 1040px;
+    text-align: left;
+    margin: auto;
+}
+.couse-btn{
+    display: inline-block;
+    width: 33%;
+    height: 55px;
+    border-width: 2px;
+    border-color: #f79314;
+    border-radius: 10px;
+    background-color: #ffffff;
+    text-align: left;
+    padding-left: 20px;
+
+
+    a{
+        color: #f79314;
+        font-weight: 700;
+        font-size: 20px;
+        span{
+            font-size: 16px;
+            top: 50%;
+        }
+
+    }
+    &::before{
+        content: '';
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        background-image: url(../img/icon-arrow.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        vertical-align: middle;
+        margin: 0 20px 0 0;
+    }
+
+    &:hover{
+        background-color: #f79314;
+        display: inline-block;
+        a{
+            color: #ffffff;
+            opacity: 100%;
+        }
+
+    }
+}
+
+.open-btn a{
+    &::before{
+        content: '';
+        display: inline-block;
+        text-align: center;
+        width: 30px;
+        height: 30px;
+        background-image: url(../img/icon_open_link.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        vertical-align: middle;
+        margin-right: 20px;
+    }
+}
+
+// コース共通
+
+.container{
+    width: 100%;
+}
+
+.couse{
+    width: 1040px;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    background-color: pink;
+    padding: 40px;
+    .carrier{
+        text-align: center;
+    }
+
+}
+
+.contents1,.contents2,.contents3{
+    padding: 20px;
+    margin: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    h3{
+        font-size: 20px;
+        line-height: 26px;
+        &::before{
+            content: '';
+            display: inline-block;
+            text-align: center;
+            width: 20px;
+            height: 20px;
+            background-image: url(../img/heading-icon.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+    }
+}
+
+.contents2{
+    p{
+        display: inline-block;
+        padding-left: 10px;
+    }
+}
+
+.content-plan{
+    margin-top: 10px;
+    p{
+        line-height: 26px;
+    }
+}
+
+.tenn{
+    &::before{
+        content: '';
+        display: inline-block;
+        background-color: #f79314;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin: 5px 10px;
+        position: relative;
+        top: 4px;
+    }
+}
+
+.planicon{
+    display: inline-block;
+    color: #f79314;
+    background-color: #FCFAF5;
+    width: 140px;
+    height: 34px;
+    border-radius: 17px;
+    padding: 5px 20px;
+    margin: 20px 0;
+}
+
+@mixin planicon($img){
+    &::before{
+        content: '';
+        display: inline-block;
+        text-align: center;
+        width: 20px;
+        height: 20px;
+        background-image: $img;
+        background-repeat: no-repeat;
+        background-size: contain;
+        vertical-align: middle;
+        margin-right: 8px;
+
+    }
+}
+
+.pencil{
+   @include planicon(url(../img/icon-pencil.png));
+}
+
+.calender{
+    @include planicon(url(../img/icon-calender.png));
+}
+
+.condition{
+    @include planicon(url(../img/icon-condition.png));
+}
+
+.coin{
+    @include planicon(url(../img/icon-coin.png));
+}
+
+.pc{
+    @include planicon(url(../img/icon-pc.png));
+}

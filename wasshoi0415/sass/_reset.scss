@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+:root {
+    --main-color: #222222;
+    --accent-color:#f79314;
+    --dark-color:#FCFAF5;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Noto Sans JP', sans-serif;
+    // font-weight: 400;
+    text-decoration: none;
+    // display: block;
+    // word-break: break-all;
+}
+
+title,script{
+    display: none;
+}
+html.body{
+    width: 100%;
+}
+
+body{
+    font-family: 'Noto Sans JP', sans-serif;
+    width: 100%;
+}
+ul,li{
+    list-style: none;
+}
+h2{
+    font-size: 46px;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 90px;
+}
+h3{
+    font-size: 16px;
+    line-height: 24px;
+}
+h4{
+    font-size: 16px;
+    list-style: 24px;
+    font-weight: 700;
+}
+.u-bar{
+    widows: 50px;
+    height: 5px;
+    background-color: #f79314;
+    border-width: 0px;
+    align-items: center;
+    position: absolute;
+    padding-top: 100px;
+}
+
+a{
+    &:hover{
+        opacity: 50%;
+    }
+}
+
+.lato{
+    font-family: "Lato",sans-serif;
+    font-size: 50px;
+    font-weight: 900;
+}
+.hr{
+    margin-top: 35px;
+    width: 40px;
+    height: 5px;
+    border-style: none;
+    background-color: #f79314;
+}
+
+
+@media screen and (max-width: 767px) {
+body{
+    text-align: center;
+}
+h2{
+    font-size: 26px;
+    line-height: 31px;
+    padding-top: 65px;
+}
+
+}
+
+
+
+// /* margin padding reset */
+// body, div, p,  ul, ol, li, dl, dt, dd, table, th ,td, img, figure,
+// h1, h2, h3 ,h4 ,h5, h6, form, select
+// { margin: 0; padding: 0; }
+
+// a{
+//     text-decoration:none;
+// }
+
+// html
+// { -webkit-text-size-adjust: 100%; }
+
+// body
+// { -webkit-font-smoothing: antialiased; }
+
+// /* remove list point mark */
+// ul, ol
+// { list-style: none; }
+
+// /* remove border & off descender */
+// img
+// { border: 0; vertical-align: middle; }
+
+// /* remove descender */
+// svg, input, select, textarea, label
+// { vertical-align: middle; }
+
+// /* set collapse */
+// table
+// { border-collapse: collapse; }
+
+// /* break word for all elements */
+// *, *:before, *:after
+// { word-break: break-all; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; 
+
+// // -moz-appearance: none;
+// // -webkit-appearance: none;
+// // -moz-appearance: button;
+// // -webkit-appearance: button;
+// // -moz-appearance: checkbox;
+// // -webkit-appearance: checkbox;
+// // -moz-appearance: radio;
+// // -webkit-appearance: radio;
+// }
+
+// pre
+// { white-space: pre-wrap; }
+
+// address
+// { font-style: normal; }
+
+// p
+// { line-height: 1.5; }
